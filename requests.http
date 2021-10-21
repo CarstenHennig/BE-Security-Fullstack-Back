@@ -1,0 +1,27 @@
+### Register new user
+POST http://localhost:9000/register
+Content-Type: application/json
+
+{
+    "email": "joel.peltonen@digitalcareerinstituite.org",
+    "password": "123456"
+}
+
+### Login user
+POST http://localhost:9000/login
+Content-Type: application/json
+
+{
+    "email": "joel.peltonen@digitalcareerinstituite.org",
+    "password": "123456"
+}
+
+
+### Send a message
+POST http://localhost:9000/message
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTZmZTQ5YjI2MWQ3ZTZjZjkxNTkwZjgiLCJpYXQiOjE2MzQ3MzE1MTF9.x441pNUXrV18Ylxy6H-pJByA1--cT0tEZAVz-nAoZvE
+Content-Type: application/json
+
+{
+    "message": "MyNameIsJoel"
+}
